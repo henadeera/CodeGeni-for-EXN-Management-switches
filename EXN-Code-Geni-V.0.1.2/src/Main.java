@@ -357,7 +357,7 @@ public class Main {
 	
 	
 	/*Method : public  String[] txtTempate2KeywordArray(String txtTemplate)
-	 *Purpose: Extracts keywords from tempate and retrun them in an String[].
+	 *Purpose: Extracts keywords from template and return them in an String[].
 	 *Called by : public void codeMerge( Map<String,String> map, NodeList nList)
 	 */
 

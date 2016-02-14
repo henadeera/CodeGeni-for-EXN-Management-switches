@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<data-set>
+  <record>
+    <device_model>XOS</device_model>
+    <loopback_no>2.0</loopback_no>
+    <loopback_ip>2.2.2.2</loopback_ip>
+    <loopback_subnetmask>255.255.255.255</loopback_subnetmask>
+  </record>
+  <record>
+    <device_model>EOS</device_model>
+    <loopback_no>1.0</loopback_no>
+    <loopback_ip>1.1.1.1</loopback_ip>
+    <loopback_subnetmask>255.255.255.255</loopback_subnetmask>
+  </record>
+  <record>
+    <device_model>xos</device_model>
+    <loopback_no>3.0</loopback_no>
+    <loopback_ip>3.3.3.3</loopback_ip>
+    <loopback_subnetmask>255.255.255.255</loopback_subnetmask>
+  </record>
+</data-set>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<data-set>
+  <record>
+    <device_ip>192.168.1.45</device_ip>
+    <device_model>C5</device_model>
+    <ipv6_vlan>1000</ipv6_vlan>
+    <ipv6_address>2a00:5c60:0020:1000::7/64</ipv6_address>
+    <ipv6_network>2a00:5c60:0020:3000::/64</ipv6_network>
+    <ipv6_next_hop>2a00:5c60:0020:1000::5/64</ipv6_next_hop>
+  </record>
+  <record>
+    <device_ip>192.168.1.45</device_ip>
+    <device_model>C5</device_model>
+    <ipv6_vlan>200</ipv6_vlan>
+    <ipv6_address>2a00:5c60:0020:1000::7/64</ipv6_address>
+    <ipv6_network>2a00:5c60:0020:3000::/64</ipv6_network>
+    <ipv6_next_hop>2a00:5c60:0020:1000::5/64</ipv6_next_hop>
+  </record>
+  <record>
+    <device_ip>192.168.1.45</device_ip>
+    <device_model>C5</device_model>
+    <ipv6_vlan>1</ipv6_vlan>
+    <ipv6_address>2a00:5c60:0020:1000::7/64</ipv6_address>
+    <ipv6_network>2a00:5c60:0020:3000::/64</ipv6_network>
+    <ipv6_next_hop>2a00:5c60:0020:1000::5/64</ipv6_next_hop>
+  </record>
+</data-set>

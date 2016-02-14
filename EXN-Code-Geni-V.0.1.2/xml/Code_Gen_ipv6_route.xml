@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<device_ip>192.168.1.45</device_ip>
+		<device_model>C5</device_model>
+		<ipv6_vlan>1000</ipv6_vlan>
+		<ipv6_address>2a00:5c60:0020:1000::7/64</ipv6_address>
+		<ipv6_network>2a00:5c60:0020:32045::7/64</ipv6_network>
+		<ipv6_next_hop>2a00:5c60:0020:3204::7/64</ipv6_next_hop>
+	</record>
+	<record>
+		<device_ip>192.168.1.46</device_ip>
+		<device_model>S8</device_model>
+		<ipv6_vlan>1001</ipv6_vlan>
+		<ipv6_address>2a00:5c60:0020:1000::7/65</ipv6_address>
+		<ipv6_network>2a00:5c60:0020:32045::7/65</ipv6_network>
+		<ipv6_next_hop>2a00:5c60:0020:3204::7/65</ipv6_next_hop>
+	</record>
+	<record>
+		<device_ip>192.168.1.47</device_ip>
+		<device_model>S4</device_model>
+		<ipv6_vlan>1002</ipv6_vlan>
+		<ipv6_address>2a00:5c60:0020:1000::7/66</ipv6_address>
+		<ipv6_network>2a00:5c60:0020:32045::7/66</ipv6_network>
+		<ipv6_next_hop>2a00:5c60:0020:3204::7/66</ipv6_next_hop>
+	</record>
+	<record>
+		<device_ip>192.168.1.48</device_ip>
+		<device_model>SSA</device_model>
+		<ipv6_vlan>1003</ipv6_vlan>
+		<ipv6_address>2a00:5c60:0020:1000::7/67</ipv6_address>
+		<ipv6_network>2a00:5c60:0020:32045::7/67</ipv6_network>
+		<ipv6_next_hop>2a00:5c60:0020:3204::7/67</ipv6_next_hop>
+	</record>
+</data-set>

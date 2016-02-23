@@ -29,4 +29,26 @@ public class ReadTxtFile {
 	        br.close();
 	    }
 	}
+	
+	public String[] exctractKeywords (String fileString){
+		String keywords="";
+		for (int i = 0;i< fileString.length();i++) {	
+			char character = fileString.charAt(i);
+			if (character=='['){		
+				for (;i< fileString.length();i++){
+					if (character!=']'){
+						character = fileString.charAt(i);
+						keywords = keywords + character;
+					}
+					else{
+						keywords = keywords + " ";
+						break;
+					}
+				}				
+			}
+		} 
+
+		return keywords.split("\\s+");
+
+	}
 }

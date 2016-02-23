@@ -351,6 +351,56 @@ public class Main {
 		lblLoudspeaker.setIcon(new ImageIcon(icon_path+"loudspeaker.png"));
 		lblLoudspeaker.setBounds(54, 11, 37, 40);
 		frmExncodegeni.getContentPane().add(lblLoudspeaker);
+		
+		JButton btnViewTemplate = new JButton("");
+		btnViewTemplate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnViewTemplate.setToolTipText("View Excel");
+		btnViewTemplate.setBounds(298, 64, 26, 29);
+		frmExncodegeni.getContentPane().add(btnViewTemplate);
+		
+		JButton btnCreateExcelTemplate = new JButton("");
+		btnCreateExcelTemplate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				
+	try {
+					
+					if (cmbCategory.getSelectedItem().toString().trim().isEmpty()){
+						JOptionPane.showMessageDialog(frmExncodegeni,
+								"Please select an Excel file first." ,
+								"Warning- EXN-Code_Geni-V.0.1",
+								JOptionPane.WARNING_MESSAGE);
+						        lblMessage.setText("Hello " + System.getProperty("user.name").substring(1) + ", Oops! An error occured.");
+					}
+					
+					//Runtime.getRuntime().exec("cmd /c start " +excel_name); 
+					cat_name = cmbCategory.getSelectedItem().toString();
+					if (cat_name.isEmpty()){
+						JOptionPane.showMessageDialog(frmExncodegeni,
+								"Please select a category." ,
+								"Warning- EXN-Code_Geni-V.0.1",
+								JOptionPane.WARNING_MESSAGE); 
+						        lblMessage.setText("Hello " + System.getProperty("user.name").substring(1) + ", Oops! An error occured.");
+					}
+					ReadTxtFile readTxtFile = new ReadTxtFile(cat_name);
+					readTxtFile.exctractKeywords(readTxtFile.txtFile2String());
+				} catch (IOException e) {
+					lblMessage.setText("Oops! An error occured.");
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				
+					
+				}
+				
+				
+			}
+		});
+		btnCreateExcelTemplate.setToolTipText("View Excel");
+		btnCreateExcelTemplate.setBounds(334, 64, 26, 29);
+		frmExncodegeni.getContentPane().add(btnCreateExcelTemplate);
 
 	}
 

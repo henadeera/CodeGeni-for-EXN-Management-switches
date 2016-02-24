@@ -385,8 +385,12 @@ public class Main {
 								JOptionPane.WARNING_MESSAGE); 
 						        lblMessage.setText("Hello " + System.getProperty("user.name").substring(1) + ", Oops! An error occured.");
 					}
+					
 					ReadTxtFile readTxtFile = new ReadTxtFile(cat_name);
-					readTxtFile.exctractKeywords(readTxtFile.txtFile2String());
+					ExcelDocument excelDocument = new ExcelDocument();
+					excelDocument.create(readTxtFile.exctractKeywords(readTxtFile.txtFile2String()), cat_name+ ".xlsx", excel_path);
+					
+					
 				} catch (IOException e) {
 					lblMessage.setText("Oops! An error occured.");
 					// TODO Auto-generated catch block
